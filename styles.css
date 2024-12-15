@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+    /* border: 1px solid red; */
+}
+
+body{
+    height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p{
+    width: 32ch;
+    color: hsl(0, 0%, 42%);
+}
+
+footer {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    gap: 1rem;
+}
+
+.card {
+    /* Instead of a fixed width or vw, use a max-width for scaling on large screens */
+    max-width: 350px;    
+    /* fallback for smaller screens—takes up 90% of the screen width */
+    width: 90%;          
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    border: solid hsl(0, 0%, 7%);
+    border-width: 1px 8px 8px 1px;
+    display: flex;
+    flex-direction: column;
+    /* align items to the left */
+    align-items: flex-start;  
+    /* spacing between children instead of multiple margins */
+    gap: 1rem;                
+    color: hsl(0, 0%, 7%);
+
+  }
+  
+
+.card > h1 {
+    font-size: 24px;
+    align-self: flex-start;
+}
+
+
+
+.card > h4 {
+    background-color: hsl(47, 88%, 63%);
+    padding: 2px 12px 2px 12px ;
+    border-radius: 5px;
+    align-self: flex-start;
+    font-size: 16px;
+}
+
+.card > span {
+    align-self: flex-start;
+}
+
+.illustration{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px ;
+}
+
+.avatar{
+    width: 20%;
+}
